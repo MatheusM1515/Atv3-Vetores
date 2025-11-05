@@ -3,21 +3,28 @@ import java.util.Scanner;
 public class Ex4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        double[] numeros = new double[10];
+        int tamanho=10;
+        double[] numeros = new double[tamanho];
 
-        for (int i = 0; i < numeros.length; i++) {
-            System.out.println("Digite o " + (i + 1) + " numero ");
-            numeros[i] = sc.nextDouble();
+        for (int j = 0; j<numeros.length; j++) {
+            System.out.println("Digite o " + (j + 1) + ": numero ");
+            numeros[j] = sc.nextDouble();
         }
 
-        double maior = numeros[0], menor = numeros[0];
 
-        for (int j = 0; j < numeros.length; j++) {
-            if (numeros
-                System.out.println("O número ")
+            double maior = numeros[0];
+            double menor = numeros[0];
+
+        for (int i = 0; i < numeros.length; i++) {
+            if (numeros[i] > maior) {
+                maior = numeros[i];
             }
-
+            if (numeros[i] < menor) {
+                menor = numeros[i];
+            }
+        }
+        System.out.println("O número maior é " + maior);
+        System.out.println("O número menor é " + menor);
 
         }
     }
-}
