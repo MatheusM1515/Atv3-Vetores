@@ -10,8 +10,9 @@ public class Ex9 {
             numeros[j] = sc.nextInt();
         }
         for (int k = 0; k < numeros.length; k++) {
-            if (numeros[k] > 0) ;
-            System.out.println(numeros[k] + "são positivos!");
+            if (numeros[k] > 0) {
+                System.out.println(numeros[k] + "é positivo");
+            }
         }
     }
 }
